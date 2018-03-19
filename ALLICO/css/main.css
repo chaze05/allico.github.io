@@ -148,6 +148,7 @@ header{
 	direction: block;
 	width: 36px;
 	color: #fff;
+	text-decoration: none;
 	line-height:19px;
 	border-radius:5px;
 	right: 35px;
@@ -266,6 +267,110 @@ table thead th{
 	line-height: 50px;
 	vertical-align: middle;
 }
-table thead th:not(:last-child){
+table thead tr th:not(:last-child){
 	border-right: 1px solid #433f5d;
+}
+table tbody tr{
+	cursor: pointer;
+	background-color: #201c35;
+}
+table tbody tr:hover{
+	background-color: #2e2c44;
+}
+table tbody tr td{
+	vertical-align: middle;
+	padding-left:22px;
+	height:93px;
+	border-bottom: 1px solid #433f5d;
+}
+table tbody tr td:nth-of-type(2){
+	padding:22px 0 0 0 ;
+	vertical-align: top
+}
+table tbody tr td a {
+	display: inline-block;
+	vertical-align: middle;
+}
+table tbody tr td .info{
+	display: inline-block;
+	position: relative;
+	margin-left: 20px;
+	vertical-align: middle;
+}
+table tbody tr td .info .name{
+	font-size:15px;
+	color: #fff;
+	display: block;
+}
+table tbody tr td .info .subname{
+	font-size:14px;
+	color: #767676;
+}
+table tbody tr td .info .rating{
+	position: absolute;
+	left:75px;
+	top: -2px;
+	font-size:13px;
+	text-align: center;	
+	display: block;
+	width: 36px;
+	text-decoration: none;
+	color: #fff;
+	line-height:19px;
+	border-radius:5px;
+	background-color: #4270e0;
+	border:1px solid #3462d0;
+}
+table tbody tr td .info .favorite{
+	position: absolute;
+	color: #d4d4d4;
+	display: block;
+	line-height: 20px;
+	display: block;
+	text-align: center;
+	background-color: #fff;
+	width: 24px;
+	left: 115px;
+	top: -2px;
+	border-radius: 5px;
+	border:1px solid #dcdcdc
+}
+table tbody tr td .dates > span{
+	float: left;
+	text-align: center;
+	color: #7b788a;
+	font-size: 13px;
+}
+table tbody tr td .dates span.open-date{
+	width:142px;
+}
+table tbody tr td .dates span.close-date{
+	width:123px;
+}
+table tbody tr td .progress-box-holder{
+	padding-left: 36px;
+	margin-top: 5px;
+}
+table tbody tr td .progress-box-holder img{
+	display: inline-block;
+}
+table tbody tr td .progress-box-holder .progress-box{
+	width:173px;
+	display: inline-block;
+	height:8px;
+	border-radius:30px;
+	background-color: #dfdfe3;
+}
+table tbody tr td .progress-box-holder .progress-box .bar{
+    background-color: #dfdfe3;
+    background: linear-gradient(to right, #f1497d , #614ff0);
+	height: 8px;
+	display: block;
+    border-radius: 30px;
+}
+table tbody tr td .time-details{
+	font-size:11px;
+}
+table tbody tr td .time-details.blue{
+	color: #5750f8;
 }
