@@ -34,6 +34,8 @@ body{
 section{
 	height:1418px;
 	background:url(../img/main-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 /* heade area */
@@ -41,6 +43,7 @@ header{
 	position: relative;
 	height:100px;
 	width: 100%;
+	min-width:1200px;
 	background-color: #fff;
 }
 .logo-container{
@@ -219,6 +222,9 @@ header{
 	display: block;
     border-radius: 30px;
 }
+.wallet-box .progress-box-holder .progress-box .bar.greem{
+	background: linear-gradient(to right, #f1497d , #614ff0,#3eb4b6);
+}
 .wallet-box .time-details{
 	color: #5750f8;
 	font-size:11px;
@@ -247,15 +253,18 @@ header{
 	border-radius: 30px;
 	line-height:45px;
 	font-size:16px;
+	transition: all 0.3s ease-in-out;
 }
-.list-option-box ul li.active a{
+.list-option-box ul li.active a,.list-option-box ul li:hover a{
 	color: #fff;
 	background-color: #5750f8;
+	transition: all 0.3s ease-in-out;
 }
 
 /* table area */
 table{
 	border-radius:10px;
+	width: 1200px;
 }
 
 table thead {
@@ -263,7 +272,7 @@ table thead {
 }
 table thead th{
 	color: #fff;
-	padding: 0 24px;
+	padding: 0 22px;
 	line-height: 50px;
 	vertical-align: middle;
 }
@@ -277,15 +286,24 @@ table tbody tr{
 table tbody tr:hover{
 	background-color: #2e2c44;
 }
+table tbody tr:hover .hover-white{
+	color: #fff;
+	transition:color 0.25s ease-in-out;
+}
+
 table tbody tr td{
 	vertical-align: middle;
 	padding-left:22px;
+	color: red;
 	height:93px;
 	border-bottom: 1px solid #433f5d;
 }
 table tbody tr td:nth-of-type(2){
 	padding:22px 0 0 0 ;
 	vertical-align: top
+}
+table tbody tr td .hover-white{
+	transition: color 0.25s ease-in-out;
 }
 table tbody tr td a {
 	display: inline-block;
@@ -342,14 +360,14 @@ table tbody tr td .dates > span{
 	font-size: 13px;
 }
 table tbody tr td .dates span.open-date{
-	width:142px;
-}
-table tbody tr td .dates span.close-date{
 	width:123px;
 }
+table tbody tr td .dates span.close-date{
+	width:122px;
+}
 table tbody tr td .progress-box-holder{
-	padding-left: 36px;
-	margin-top: 5px;
+	padding-left: 24px;
+	margin-top: 2px;
 }
 table tbody tr td .progress-box-holder img{
 	display: inline-block;
@@ -359,7 +377,7 @@ table tbody tr td .progress-box-holder .progress-box{
 	display: inline-block;
 	height:8px;
 	border-radius:30px;
-	background-color: #dfdfe3;
+	background-color: #38364e;
 }
 table tbody tr td .progress-box-holder .progress-box .bar{
     background-color: #dfdfe3;
@@ -368,9 +386,116 @@ table tbody tr td .progress-box-holder .progress-box .bar{
 	display: block;
     border-radius: 30px;
 }
+table tbody tr td .progress-box-holder .progress-box .bar.green{
+	background: linear-gradient(to right, #f1497d , #614ff0,#3db4b7);
+}
 table tbody tr td .time-details{
 	font-size:11px;
+	padding:0 22px;
+	padding: 0px 29px;
+    top: -5px;
+	position: relative;
 }
 table tbody tr td .time-details.blue{
 	color: #5750f8;
+}
+table tbody tr td .time-details.red{
+	color: #f1497d;
+}
+table tbody tr td .time-details.green{
+	color: #3accb2;
+}
+table tbody tr td .descriptions{
+	width: 296px;
+	font-size: 13px;
+	color: #7b788a;
+	display: inline-block;
+	vertical-align: middle;
+}
+table tbody tr td .social-link{
+	width: 275px;
+	vertical-align: middle;
+	display: inline-block;
+	text-align: center;
+	margin-left: -4px;
+}
+table tbody tr td .social-link ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+table tbody tr td .social-link ul li{
+	display: inline-block;
+	margin-left: -4px;
+}
+table tbody tr td .social-link ul li:not(:last-child){
+	margin-right:18px;
+}
+
+/* footer area */
+
+footer{
+	background-color:#2d2d2d;
+}
+footer .container{
+	padding-top: 62px;
+	padding-bottom: 41px;
+}
+
+.footer-left-side{
+	float: left;
+	width:592px;
+	padding-left: 60px;
+}
+.footer-left-side div{
+	float: left;
+}
+.footer-left-side .about{
+	margin-right: 66px;
+}
+.footer-left-side .policy{
+	margin-right: 73px;
+}
+.footer-left-side .heading{
+	display: block;
+	font-size:15px;
+	color:#fff;
+}
+
+.footer-left-side ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.footer-left-side ul li{
+	padding-top: 15px;
+}
+
+.footer-left-side ul li a{
+	display: block;
+	text-decoration: none;
+	color: #6c6c6c;
+}
+.footer-right-side{
+	float:left;
+	width: 608px;
+	text-align: center;
+}
+.footer-right-side .heading-box span{
+	display: block;
+}
+.footer-right-side .heading-box .main-heading{
+	font-size:20px;
+	color: #fff;
+}
+.footer-right-side .heading-box .sub-heading{
+	font-size:15px;
+	color: #7d7d7d;
+}
+.bottom-footer{
+	display: block;
+	line-height: 52px;
+	border-top: 1px solid #333333;
+	color:#fff;
 }
